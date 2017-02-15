@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2017-02-15T07:59:05.572Z</updated>
+  <updated>2017-02-15T09:59:34.278Z</updated>
   <id>/</id>
   
   <author>
@@ -16,11 +16,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>life_cycle</title>
+    <link href="/2017/02/15/php/life-cycle/"/>
+    <id>/2017/02/15/php/life-cycle/</id>
+    <published>2017-02-15T09:46:22.000Z</published>
+    <updated>2017-02-15T09:59:34.278Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;开始和结束&quot;&gt;&lt;a href=&quot;#开始和结束&quot; class=&quot;headerlink&quot; title=&quot;开始和结束&quot;&gt;&lt;/a&gt;开始和结束&lt;/h2&gt;&lt;h3 id=&quot;PHP-MINIT-FUNCTION-myextension-ZEND-MINIT-FUNCTION&quot;&gt;&lt;
+    
+    </summary>
+    
+      <category term="php" scheme="/categories/php/"/>
+    
+    
+      <category term="php" scheme="/tags/php/"/>
+    
+      <category term="zend extension" scheme="/tags/zend-extension/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2017/02/15/hello-world/"/>
     <id>/2017/02/15/hello-world/</id>
-    <published>2017-02-15T07:59:05.572Z</published>
-    <updated>2017-02-15T07:59:05.572Z</updated>
+    <published>2017-02-14T16:00:00.000Z</published>
+    <updated>2017-02-15T10:02:40.761Z</updated>
     
     <summary type="html">
     
@@ -32,35 +54,32 @@
   </entry>
   
   <entry>
-    <title>c标准库</title>
-    <link href="/2017/02/15/2016-04-05-c_standard_library/"/>
-    <id>/2017/02/15/2016-04-05-c_standard_library/</id>
-    <published>2017-02-15T07:59:05.572Z</published>
-    <updated>2017-02-15T07:59:05.572Z</updated>
+    <title>程序设计原则</title>
+    <link href="/2016/05/01/2016-04-01-programming_principles/"/>
+    <id>/2016/05/01/2016-04-01-programming_principles/</id>
+    <published>2016-04-30T16:00:00.000Z</published>
+    <updated>2017-02-15T10:02:40.761Z</updated>
     
     <summary type="html">
     
-      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/di
+      &lt;h2 id=&quot;程序设计法则&quot;&gt;&lt;a href=&quot;#程序设计法则&quot; class=&quot;headerlink&quot; title=&quot;程序设计法则&quot;&gt;&lt;/a&gt;程序设计法则&lt;/h2&gt;&lt;p&gt;  首先一些规则如下：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table
     
     </summary>
     
-      <category term="linux_c_cpp" scheme="/categories/linux-c-cpp/"/>
+      <category term="杂谈" scheme="/categories/%E6%9D%82%E8%B0%88/"/>
     
     
-      <category term="linux" scheme="/tags/linux/"/>
-    
-      <category term="c" scheme="/tags/c/"/>
-    
-      <category term="c++" scheme="/tags/c/"/>
+      <category term="编程思想" scheme="/tags/%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/"/>
     
   </entry>
   
   <entry>
     <title>ios手机浏览器事件冒泡</title>
-    <link href="/2017/02/15/2016-04-08-ios_event_bubbing/"/>
-    <id>/2017/02/15/2016-04-08-ios_event_bubbing/</id>
-    <published>2017-02-15T07:59:05.572Z</published>
-    <updated>2017-02-15T07:59:05.572Z</updated>
+    <link href="/2016/04/08/2016-04-08-ios_event_bubbing/"/>
+    <id>/2016/04/08/2016-04-08-ios_event_bubbing/</id>
+    <published>2016-04-07T16:00:00.000Z</published>
+    <updated>2017-02-15T10:02:40.761Z</updated>
     
     <summary type="html">
     
@@ -83,10 +102,10 @@
   
   <entry>
     <title>简说僵尸进程、守护进程与托管进程</title>
-    <link href="/2017/02/15/2016-04-08-zombie_daemon/"/>
-    <id>/2017/02/15/2016-04-08-zombie_daemon/</id>
-    <published>2017-02-15T07:59:05.572Z</published>
-    <updated>2017-02-15T07:59:05.572Z</updated>
+    <link href="/2016/04/08/2016-04-08-zombie_daemon/"/>
+    <id>/2016/04/08/2016-04-08-zombie_daemon/</id>
+    <published>2016-04-07T16:00:00.000Z</published>
+    <updated>2017-02-15T10:02:40.761Z</updated>
     
     <summary type="html">
     
@@ -109,11 +128,35 @@
   </entry>
   
   <entry>
+    <title>c标准库</title>
+    <link href="/2016/04/05/2016-04-05-c_standard_library/"/>
+    <id>/2016/04/05/2016-04-05-c_standard_library/</id>
+    <published>2016-04-04T16:00:00.000Z</published>
+    <updated>2017-02-15T10:02:40.761Z</updated>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/di
+    
+    </summary>
+    
+      <category term="linux_c_cpp" scheme="/categories/linux-c-cpp/"/>
+    
+    
+      <category term="linux" scheme="/tags/linux/"/>
+    
+      <category term="c" scheme="/tags/c/"/>
+    
+      <category term="c++" scheme="/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
     <title>校招git工具培训命令纲要</title>
-    <link href="/2017/02/15/2016-03-30-git_merge&amp;git_rebase/"/>
-    <id>/2017/02/15/2016-03-30-git_merge&amp;git_rebase/</id>
-    <published>2017-02-15T07:59:05.571Z</published>
-    <updated>2017-02-15T07:59:05.571Z</updated>
+    <link href="/2016/03/30/2016-03-30-git_merge&amp;git_rebase/"/>
+    <id>/2016/03/30/2016-03-30-git_merge&amp;git_rebase/</id>
+    <published>2016-03-29T16:00:00.000Z</published>
+    <updated>2017-02-15T10:02:40.760Z</updated>
     
     <summary type="html">
     
@@ -130,11 +173,49 @@
   </entry>
   
   <entry>
+    <title>javascript es4 es5 es6</title>
+    <link href="/2016/03/30/2016-03-30-javascsript-es4-es5-es6/"/>
+    <id>/2016/03/30/2016-03-30-javascsript-es4-es5-es6/</id>
+    <published>2016-03-29T16:00:00.000Z</published>
+    <updated>2017-02-15T10:02:40.760Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;javascript-规范简书&quot;&gt;&lt;a href=&quot;#javascript-规范简书&quot; class=&quot;headerlink&quot; title=&quot;javascript 规范简书&quot;&gt;&lt;/a&gt;javascript 规范简书&lt;/h2&gt;&lt;p&gt;1、es 262、es263&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="javaScript" scheme="/categories/javaScript/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>为什么不使用tdd编程</title>
+    <link href="/2016/03/26/2016-03-26-why-do-not-use-tdd/"/>
+    <id>/2016/03/26/2016-03-26-why-do-not-use-tdd/</id>
+    <published>2016-03-25T16:00:00.000Z</published>
+    <updated>2017-02-15T10:02:40.760Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;不使用的理由&quot;&gt;&lt;a href=&quot;#不使用的理由&quot; class=&quot;headerlink&quot; title=&quot;不使用的理由&quot;&gt;&lt;/a&gt;不使用的理由&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;TDD鼓励保守：人们不愿意对应用程序做重大修改，因为他们知道许多
+    
+    </summary>
+    
+      <category term="软件工程" scheme="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>开篇文章</title>
-    <link href="/2017/02/15/2016-03-25-preface/"/>
-    <id>/2017/02/15/2016-03-25-preface/</id>
-    <published>2017-02-15T07:59:05.571Z</published>
-    <updated>2017-02-15T07:59:05.571Z</updated>
+    <link href="/2016/03/25/2016-03-25-preface/"/>
+    <id>/2016/03/25/2016-03-25-preface/</id>
+    <published>2016-03-24T16:00:00.000Z</published>
+    <updated>2017-02-15T10:02:40.760Z</updated>
     
     <summary type="html">
     
@@ -149,32 +230,27 @@
   </entry>
   
   <entry>
-    <title>程序设计原则</title>
-    <link href="/2017/02/15/2016-04-01-programming_principles/"/>
-    <id>/2017/02/15/2016-04-01-programming_principles/</id>
-    <published>2017-02-15T07:59:05.571Z</published>
-    <updated>2017-02-15T07:59:05.571Z</updated>
+    <title></title>
+    <link href="/2016/03/25/2016-03-25-test-markdown/"/>
+    <id>/2016/03/25/2016-03-25-test-markdown/</id>
+    <published>2016-03-24T16:00:00.000Z</published>
+    <updated>2017-02-15T10:02:40.760Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;程序设计法则&quot;&gt;&lt;a href=&quot;#程序设计法则&quot; class=&quot;headerlink&quot; title=&quot;程序设计法则&quot;&gt;&lt;/a&gt;程序设计法则&lt;/h2&gt;&lt;p&gt;  首先一些规则如下：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table
+      &lt;h1 id=&quot;h1测试&quot;&gt;&lt;a href=&quot;#h1测试&quot; class=&quot;headerlink&quot; title=&quot;h1测试&quot;&gt;&lt;/a&gt;h1测试&lt;/h1&gt;&lt;h2 id=&quot;h2&quot;&gt;&lt;a href=&quot;#h2&quot; class=&quot;headerlink&quot; title=&quot;h2&quot;&gt;&lt;/a&gt;h2&lt;/h
     
     </summary>
     
-      <category term="杂谈" scheme="/categories/%E6%9D%82%E8%B0%88/"/>
-    
-    
-      <category term="编程思想" scheme="/tags/%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/"/>
     
   </entry>
   
   <entry>
     <title>gcc参数</title>
-    <link href="/2017/02/15/2016-03-25-GCC_parameters/"/>
-    <id>/2017/02/15/2016-03-25-GCC_parameters/</id>
-    <published>2017-02-15T07:59:05.571Z</published>
-    <updated>2017-02-15T07:59:05.571Z</updated>
+    <link href="/2016/03/25/2016-03-25-GCC_parameters/"/>
+    <id>/2016/03/25/2016-03-25-GCC_parameters/</id>
+    <published>2016-03-24T16:00:00.000Z</published>
+    <updated>2017-02-15T09:54:23.690Z</updated>
     
     <summary type="html">
     
@@ -193,60 +269,6 @@
       <category term="c++" scheme="/tags/c/"/>
     
       <category term="gcc" scheme="/tags/gcc/"/>
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="/2017/02/15/2016-03-25-test-markdown/"/>
-    <id>/2017/02/15/2016-03-25-test-markdown/</id>
-    <published>2017-02-15T07:59:05.571Z</published>
-    <updated>2017-02-15T07:59:05.571Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;h1测试&quot;&gt;&lt;a href=&quot;#h1测试&quot; class=&quot;headerlink&quot; title=&quot;h1测试&quot;&gt;&lt;/a&gt;h1测试&lt;/h1&gt;&lt;h2 id=&quot;h2&quot;&gt;&lt;a href=&quot;#h2&quot; class=&quot;headerlink&quot; title=&quot;h2&quot;&gt;&lt;/a&gt;h2&lt;/h
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>为什么不使用tdd编程</title>
-    <link href="/2017/02/15/2016-03-26-why-do-not-use-tdd/"/>
-    <id>/2017/02/15/2016-03-26-why-do-not-use-tdd/</id>
-    <published>2017-02-15T07:59:05.571Z</published>
-    <updated>2017-02-15T07:59:05.571Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;不使用的理由&quot;&gt;&lt;a href=&quot;#不使用的理由&quot; class=&quot;headerlink&quot; title=&quot;不使用的理由&quot;&gt;&lt;/a&gt;不使用的理由&lt;/h2&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;TDD鼓励保守：人们不愿意对应用程序做重大修改，因为他们知道许多
-    
-    </summary>
-    
-      <category term="软件工程" scheme="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>javascript es4 es5 es6</title>
-    <link href="/2017/02/15/2016-03-30-javascsript-es4-es5-es6/"/>
-    <id>/2017/02/15/2016-03-30-javascsript-es4-es5-es6/</id>
-    <published>2017-02-15T07:59:05.571Z</published>
-    <updated>2017-02-15T07:59:05.571Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;javascript-规范简书&quot;&gt;&lt;a href=&quot;#javascript-规范简书&quot; class=&quot;headerlink&quot; title=&quot;javascript 规范简书&quot;&gt;&lt;/a&gt;javascript 规范简书&lt;/h2&gt;&lt;p&gt;1、es 262、es263&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="javaScript" scheme="/categories/javaScript/"/>
-    
     
   </entry>
   
