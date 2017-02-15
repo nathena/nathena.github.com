@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>为什么不使用tdd编程 | 我本楚狂人，凤歌笑孔丘。</title>
+  <meta name="description" content="许是今生缘未了，还从梦里记明眸 —— nathena &#39;s blog" />
+  <meta name="keywords" content="我当是谁在一旁听着，原来是你。我随口吟着，你跟着哭泣什么。昨夜把我阻隔在门外，今夜又来绞缠什么。是谁在偷听我浅浅的哭泣，落下一地的心碎。而我的心随着花飞花谢，模糊了一次又一次。" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="/res/favicon.ico">
+  <link rel="alternate" href="/atom.xml" title="我本楚狂人，凤歌笑孔丘。">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="不使用的理由
+
+TDD鼓励保守：人们不愿意对应用程序做重大修改，因为他们知道许多测试会被破坏，他们必须重写。
+
+“有时候，最好的设计是最难测试的那一种”。
+
+TDD将注意力放在了细节上而不是整体。“使用TDD，你会陷入到程序不同部分的细节中去，很少回过头来看看全局。”很难为异常数据编写测试。
+
+
+
+也许是对的
+我相信，有关编写测试的事情不是说先写或是后写，而只是要写，有测试维护原则，并严格遵守你希">
+<meta property="og:type" content="article">
+<meta property="og:title" content="为什么不使用tdd编程">
+<meta property="og:url" content="/2017/02/15/2016-03-26-why-do-not-use-tdd/index.html">
+<meta property="og:site_name" content="我本楚狂人，凤歌笑孔丘。">
+<meta property="og:description" content="不使用的理由
+
+TDD鼓励保守：人们不愿意对应用程序做重大修改，因为他们知道许多测试会被破坏，他们必须重写。
+
+“有时候，最好的设计是最难测试的那一种”。
+
+TDD将注意力放在了细节上而不是整体。“使用TDD，你会陷入到程序不同部分的细节中去，很少回过头来看看全局。”很难为异常数据编写测试。
+
+
+
+也许是对的
+我相信，有关编写测试的事情不是说先写或是后写，而只是要写，有测试维护原则，并严格遵守你希">
+<meta property="og:updated_time" content="2017-02-15T07:59:05.571Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="为什么不使用tdd编程">
+<meta name="twitter:description" content="不使用的理由
+
+TDD鼓励保守：人们不愿意对应用程序做重大修改，因为他们知道许多测试会被破坏，他们必须重写。
+
+“有时候，最好的设计是最难测试的那一种”。
+
+TDD将注意力放在了细节上而不是整体。“使用TDD，你会陷入到程序不同部分的细节中去，很少回过头来看看全局。”很难为异常数据编写测试。
+
+
+
+也许是对的
+我相信，有关编写测试的事情不是说先写或是后写，而只是要写，有测试维护原则，并严格遵守你希">
+    
+  <link rel="stylesheet" href="/css.css">
+  <link rel="stylesheet" href="/Roboto_Mono.css">
+  <link rel="stylesheet" href="/waves.min.css">
+  <link rel="stylesheet" href="/style.css">
+  
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+</head>
+
+<body>
+  <div id="loading-bar-wrapper">
+  <div id="loading-bar"></div>
+</div>
+
+
+  <script>setLoadingBarProgress(20)</script> 
+  <header class="l_header">
+		<div class="wrapper container">
+			<a class="logo flat-box" href='/' >
+				nathena
+			</a>
+			<div class='menu'>
+				<ul class='h-list'>
+					
+						<li>
+							<a class='flat-box nav-home' href='/'>
+								Home
+							</a>
+						</li>
+					
+						<li>
+							<a class='flat-box nav-archives' href='/archives'>
+								Archives
+							</a>
+						</li>
+					
+						<li>
+							<a class='flat-box nav-about' href='/about'>
+								About
+							</a>
+						</li>
+					
+				</ul>
+				<div class='underline'></div>
+			</div>
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="Search" />
+						<span class="icon icon-search"></span>
+					</form>
+				</div>
+			
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a href='javascript:void(0)'><span class="icon icon-search"></span></a></li>
+				
+				<li class='s-menu'><a href='javascript:void(0)'><span class="icon icon-menu"></span></a></li>
+			</ul>
+		</div>
+		<aside class="menu-phone">
+			<nav>
+				
+					<a href="/" class="nav-home nav">
+						Home
+					</a>
+				
+					<a href="/archives" class="nav-archives nav">
+						Archives
+					</a>
+				
+					<a href="/about" class="nav-about nav">
+						About
+					</a>
+				
+			</nav>
+		</aside>
+</header>
+
+    <script>setLoadingBarProgress(40);</script>
+  <div class="l_body">
+    <div class='container'>
+      <div class='l_main'>
+        <article id="post-2016-03-26-why-do-not-use-tdd"
+  class="post white-box article-type-post"
+  itemscope itemprop="blogPost">
+	<section class='meta'>
+	<h2 class="title">
+  	<a href="/2017/02/15/2016-03-26-why-do-not-use-tdd/">
+    	为什么不使用tdd编程
+    </a>
+  </h2>
+	<time>
+	  2月 15, 2017
+	</time>
+	
+    
+    <div class='cats'>
+        <a href="/categories/软件工程/">软件工程</a>
+    </div>
+
+	</section>
+	
+		<section class="tog"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#不使用的理由"><span class="toc-number">1.</span> <span class="toc-text">不使用的理由</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#也许是对的"><span class="toc-number">2.</span> <span class="toc-text">也许是对的</span></a></li></ol></section>
+	
+	<section class="article typo">
+  	<div class="article-entry" itemprop="articleBody">
+    	<h2 id="不使用的理由"><a href="#不使用的理由" class="headerlink" title="不使用的理由"></a>不使用的理由</h2><blockquote>
+<ul>
+<li><p>TDD鼓励保守：人们不愿意对应用程序做重大修改，因为他们知道许多测试会被破坏，他们必须重写。</p>
+</li>
+<li><p>“有时候，最好的设计是最难测试的那一种”。</p>
+</li>
+<li><p>TDD将注意力放在了细节上而不是整体。“使用TDD，你会陷入到程序不同部分的细节中去，很少回过头来看看全局。”很难为异常数据编写测试。</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="也许是对的"><a href="#也许是对的" class="headerlink" title="也许是对的"></a>也许是对的</h2><blockquote>
+<p>我相信，有关编写测试的事情不是说先写或是后写，而只是要写，有测试维护原则，并严格遵守你希望一个特定项目需要达到的代码覆盖量。先写有明显的好处，但那不是一项对每个人或对每个项目而言都有效的技术。根据我的经验，有时候会有一些时间限制，迫使你快速实现，然后只测试关键环节。我一直在创业公司及互联网公司工作，那是一个节奏非常快/注重市场的环境，为了发布并获得用于评估的数据，有时候你会欠下大量的技术债务（尤其是在创业公司的早期阶段）。</p>
+</blockquote>
+
+  	</div>
+	  
+	</section>
+	
+		<section id="comments">
+		    <!-- 多说评论框 start -->
+		    <div class="ds-thread" data-thread-key="post-2016-03-26-why-do-not-use-tdd" data-title="为什么不使用tdd编程" data-url="/2017/02/15/2016-03-26-why-do-not-use-tdd/"></div>
+		    <!-- 多说评论框 end -->
+		    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+		    <script type="text/javascript">
+		    var duoshuoQuery = {short_name:'nathena'};
+		      (function() {
+		        var ds = document.createElement('script');
+		        ds.type = 'text/javascript';ds.async = true;
+		        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		        ds.charset = 'UTF-8';
+		        (document.getElementsByTagName('head')[0] 
+		         || document.getElementsByTagName('body')[0]).appendChild(ds);
+		      })();
+		      </script>
+		    <!-- 多说公共JS代码 end -->
+		 </section>
+	
+</article>
+
+      </div>
+      <aside class='l_side'>
+        
+  <section class='m_widget about'>
+
+<img class='avatar waves-image' src='/res/avatar.png' />
+
+<div class='header'>nathena</div>
+<div class='content'>
+<div></div>
+</div>
+</section>
+
+  <section class='m_widget friendly-links'>
+<div class='header'>Links</div>
+<div class='content'>
+    <ul class="entry">
+    
+        <li><a class="flat-box" target="_blank" href="https://github.com/nathena/">
+            <div class='name'>github</div>
+        </a></li>
+    
+    </ul>
+</div>
+</section>
+
+  <section class='m_widget categories'>
+<div class='header'>Categories</div>
+<div class='content'>
+    
+    <ul class="entry">
+    
+        <li><a class="flat-box" href="/categories/Web/"><div class='name'>Web</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/javaScript/"><div class='name'>javaScript</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/linux-c-cpp/"><div class='name'>linux_c_cpp</div><div class='badget'>3</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/杂谈/"><div class='name'>杂谈</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/软件工程/"><div class='name'>软件工程</div><div class='badget'>2</div></a></li>
+    
+    </ul>
+    
+</div>
+</section>
+
+  
+<div class="m_widget tagcloud">
+    <div class="header">Tags</div>
+    <div class='content'>
+        <a href="/tags/c/" style="font-size: 20px; color: #000">c</a> <a href="/tags/c/" style="font-size: 20px; color: #000">c++</a> <a href="/tags/css/" style="font-size: 14px; color: #808080">css</a> <a href="/tags/gcc/" style="font-size: 14px; color: #808080">gcc</a> <a href="/tags/git/" style="font-size: 14px; color: #808080">git</a> <a href="/tags/html/" style="font-size: 14px; color: #808080">html</a> <a href="/tags/ios/" style="font-size: 14px; color: #808080">ios</a> <a href="/tags/js/" style="font-size: 14px; color: #808080">js</a> <a href="/tags/linux/" style="font-size: 20px; color: #000">linux</a> <a href="/tags/编程思想/" style="font-size: 14px; color: #808080">编程思想</a>
+    </div>
+</div>
+
+
+
+      </aside>
+      <script>setLoadingBarProgress(60);</script>
+    </div>
+  </div>
+  <footer id="footer" class="clearfix">
+
+  <div class="social-wrapper">
+  	
+  </div>
+  
+  <div>Theme <a href='https://github.com/stkevintan/hexo-theme-material-flow' class="codename">MaterialFlow</a> designed by <a href="http://keyin.me/" target="_blank">Kevin Tan</a>.</div>
+  
+</footer>
+
+
+  <script>setLoadingBarProgress(80);</script>
+  
+
+  
+  
+  
+    <!-- 百度统计 -->
+	<script>
+	  var _hmt = _hmt || [];
+	  (function() {
+	    var hm = document.createElement("script");
+	    hm.src = "//hm.baidu.com/hm.js?b2be7c905d13cdaac406e0d6317df3e1";
+	    var s = document.getElementsByTagName("script")[0];
+	    s.parentNode.insertBefore(hm, s);
+	  })();
+	</script>
+  
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/waves.min.js"></script>
+<script src="/js/scrollreveal.min.js"></script>
+<script src="/js/jquery.fitvids.js"></script>
+<script>
+	var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+	var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+	var ALGOLIA_API_KEY = "";
+	var ALGOLIA_APP_ID = "";
+	var ALGOLIA_INDEX_NAME = "";
+  var AZURE_SERVICE_NAME = "";
+  var AZURE_INDEX_NAME = "";
+  var AZURE_QUERY_KEY = "";
+  var BAIDU_API_ID = "";
+  var SEARCH_SERVICE = "hexo";
+  var ROOT = "/"||"/";
+  if(!ROOT.endsWith('/'))ROOT += '/';
+</script>
+<script src="/js/search.js"></script>
+<script src="/js/app.js"></script>
+
+
+  <script>setLoadingBarProgress(100);</script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>我本楚狂人，凤歌笑孔丘。</title>
+  <subtitle>nathena</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="/"/>
+  <updated>2017-02-15T07:59:05.572Z</updated>
+  <id>/</id>
+  
+  <author>
+    <name>nathena</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="/2017/02/15/hello-world/"/>
+    <id>/2017/02/15/hello-world/</id>
+    <published>2017-02-15T07:59:05.572Z</published>
+    <updated>2017-02-15T07:59:05.572Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>c标准库</title>
+    <link href="/2017/02/15/2016-04-05-c_standard_library/"/>
+    <id>/2017/02/15/2016-04-05-c_standard_library/</id>
+    <published>2017-02-15T07:59:05.572Z</published>
+    <updated>2017-02-15T07:59:05.572Z</updated>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/di
+    
+    </summary>
+    
+      <category term="linux_c_cpp" scheme="/categories/linux-c-cpp/"/>
+    
+    
+      <category term="linux" scheme="/tags/linux/"/>
+    
+      <category term="c" scheme="/tags/c/"/>
+    
+      <category term="c++" scheme="/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ios手机浏览器事件冒泡</title>
+    <link href="/2017/02/15/2016-04-08-ios_event_bubbing/"/>
+    <id>/2017/02/15/2016-04-08-ios_event_bubbing/</id>
+    <published>2017-02-15T07:59:05.572Z</published>
+    <updated>2017-02-15T07:59:05.572Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;ios手机浏览器事件冒泡处理方式&quot;&gt;&lt;a href=&quot;#ios手机浏览器事件冒泡处理方式&quot; class=&quot;headerlink&quot; title=&quot;ios手机浏览器事件冒泡处理方式&quot;&gt;&lt;/a&gt;ios手机浏览器事件冒泡处理方式&lt;/h2&gt;&lt;p&gt;  On iOS there
+    
+    </summary>
+    
+      <category term="Web" scheme="/categories/Web/"/>
+    
+    
+      <category term="ios" scheme="/tags/ios/"/>
+    
+      <category term="js" scheme="/tags/js/"/>
+    
+      <category term="html" scheme="/tags/html/"/>
+    
+      <category term="css" scheme="/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>简说僵尸进程、守护进程与托管进程</title>
+    <link href="/2017/02/15/2016-04-08-zombie_daemon/"/>
+    <id>/2017/02/15/2016-04-08-zombie_daemon/</id>
+    <published>2017-02-15T07:59:05.572Z</published>
+    <updated>2017-02-15T07:59:05.572Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;托管进程&quot;&gt;&lt;a href=&quot;#托管进程&quot; class=&quot;headerlink&quot; title=&quot;托管进程&quot;&gt;&lt;/a&gt;托管进程&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;因为父进程异常结束了，然后被1号进程init收养&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id
+    
+    </summary>
+    
+      <category term="linux_c_cpp" scheme="/categories/linux-c-cpp/"/>
+    
+    
+      <category term="linux" scheme="/tags/linux/"/>
+    
+      <category term="c" scheme="/tags/c/"/>
+    
+      <category term="c++" scheme="/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>校招git工具培训命令纲要</title>
+    <link href="/2017/02/15/2016-03-30-git_merge&amp;git_rebase/"/>
+    <id>/2017/02/15/2016-03-30-git_merge&amp;git_rebase/</id>
+    <published>2017-02-15T07:59:05.571Z</published>
+    <updated>2017-02-15T07:59:05.571Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;校招git工具培训命令纲要&lt;/p&gt;
+&lt;h2 id=&quot;git-init-git-仓库初始化&quot;&gt;&lt;a href=&quot;#git-init-git-仓
+    
+    </summary>
+    
+      <category term="软件工程" scheme="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+    
+      <category term="git" scheme="/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开篇文章</title>
+    <link href="/2017/02/15/2016-03-25-preface/"/>
+    <id>/2017/02/15/2016-03-25-preface/</id>
+    <published>2017-02-15T07:59:05.571Z</published>
+    <updated>2017-02-15T07:59:05.571Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;花了几个小时搭建了这个博客，记录自己往后的工作立场。&lt;/p&gt;
+&lt;p&gt;书写过程使用了 yaml &amp;amp; makrdown&lt;/p&gt;
+&lt;p&gt;2016年03月 记于厦门软件园&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>程序设计原则</title>
+    <link href="/2017/02/15/2016-04-01-programming_principles/"/>
+    <id>/2017/02/15/2016-04-01-programming_principles/</id>
+    <published>2017-02-15T07:59:05.571Z</published>
+    <updated>2017-02-15T07:59:05.571Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;程序设计法则&quot;&gt;&lt;a href=&quot;#程序设计法则&quot; class=&quot;headerlink&quot; title=&quot;程序设计法则&quot;&gt;&lt;/a&gt;程序设计法则&lt;/h2&gt;&lt;p&gt;  首先一些规则如下：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table
+    
+    </summary>
+    
+      <category term="杂谈" scheme="/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+      <category term="编程思想" scheme="/tags/%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>gcc参数</title>
+    <link href="/2017/02/15/2016-03-25-GCC_parameters/"/>
+    <id>/2017/02/15/2016-03-25-GCC_parameters/</id>
+    <published>2017-02-15T07:59:05.571Z</published>
+    <updated>2017-02-15T07:59:05.571Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;写在前面的话&quot;&gt;&lt;a href=&quot;#写在前面的话&quot; class=&quot;headerlink&quot; title=&quot;写在前面的话&quot;&gt;&lt;/a&gt;写在前面的话&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt; 从2009-03-06的百度空间翻出来，觉得现在还是可以使用，放到这里来。顺便吐
+    
+    </summary>
+    
+      <category term="linux_c_cpp" scheme="/categories/linux-c-cpp/"/>
+    
+    
+      <category term="linux" scheme="/tags/linux/"/>
+    
+      <category term="c" scheme="/tags/c/"/>
+    
+      <category term="c++" scheme="/tags/c/"/>
+    
+      <category term="gcc" scheme="/tags/gcc/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="/2017/02/15/2016-03-25-test-markdown/"/>
+    <id>/2017/02/15/2016-03-25-test-markdown/</id>
+    <published>2017-02-15T07:59:05.571Z</published>
+    <updated>2017-02-15T07:59:05.571Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;h1测试&quot;&gt;&lt;a href=&quot;#h1测试&quot; class=&quot;headerlink&quot; title=&quot;h1测试&quot;&gt;&lt;/a&gt;h1测试&lt;/h1&gt;&lt;h2 id=&quot;h2&quot;&gt;&lt;a href=&quot;#h2&quot; class=&quot;headerlink&quot; title=&quot;h2&quot;&gt;&lt;/a&gt;h2&lt;/h
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>为什么不使用tdd编程</title>
+    <link href="/2017/02/15/2016-03-26-why-do-not-use-tdd/"/>
+    <id>/2017/02/15/2016-03-26-why-do-not-use-tdd/</id>
+    <published>2017-02-15T07:59:05.571Z</published>
+    <updated>2017-02-15T07:59:05.571Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;不使用的理由&quot;&gt;&lt;a href=&quot;#不使用的理由&quot; class=&quot;headerlink&quot; title=&quot;不使用的理由&quot;&gt;&lt;/a&gt;不使用的理由&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;TDD鼓励保守：人们不愿意对应用程序做重大修改，因为他们知道许多
+    
+    </summary>
+    
+      <category term="软件工程" scheme="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>javascript es4 es5 es6</title>
+    <link href="/2017/02/15/2016-03-30-javascsript-es4-es5-es6/"/>
+    <id>/2017/02/15/2016-03-30-javascsript-es4-es5-es6/</id>
+    <published>2017-02-15T07:59:05.571Z</published>
+    <updated>2017-02-15T07:59:05.571Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;javascript-规范简书&quot;&gt;&lt;a href=&quot;#javascript-规范简书&quot; class=&quot;headerlink&quot; title=&quot;javascript 规范简书&quot;&gt;&lt;/a&gt;javascript 规范简书&lt;/h2&gt;&lt;p&gt;1、es 262、es263&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="javaScript" scheme="/categories/javaScript/"/>
+    
+    
+  </entry>
+  
+</feed>

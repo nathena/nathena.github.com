@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>gcc参数 | 我本楚狂人，凤歌笑孔丘。</title>
+  <meta name="description" content="许是今生缘未了，还从梦里记明眸 —— nathena &#39;s blog" />
+  <meta name="keywords" content="我当是谁在一旁听着，原来是你。我随口吟着，你跟着哭泣什么。昨夜把我阻隔在门外，今夜又来绞缠什么。是谁在偷听我浅浅的哭泣，落下一地的心碎。而我的心随着花飞花谢，模糊了一次又一次。" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="/res/favicon.ico">
+  <link rel="alternate" href="/atom.xml" title="我本楚狂人，凤歌笑孔丘。">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="写在前面的话
+ 从2009-03-06的百度空间翻出来，觉得现在还是可以使用，放到这里来。顺便吐槽下百度的产品：当初那么真心的使用百度hi，结果现在变成了这样。希望github.io给力。
+
+正文
+-c 
+
+只激活预处理,编译,和汇编,也就是他只把程序做成obj文件
+例子用法:
+gcc -c hello.c
+他将生成.o的obj文件
+
+-S
+
+只激活预处理和编译，就是指把文件编译成为汇编代码。
+例">
+<meta property="og:type" content="article">
+<meta property="og:title" content="gcc参数">
+<meta property="og:url" content="/2017/02/15/2016-03-25-GCC_parameters/index.html">
+<meta property="og:site_name" content="我本楚狂人，凤歌笑孔丘。">
+<meta property="og:description" content="写在前面的话
+ 从2009-03-06的百度空间翻出来，觉得现在还是可以使用，放到这里来。顺便吐槽下百度的产品：当初那么真心的使用百度hi，结果现在变成了这样。希望github.io给力。
+
+正文
+-c 
+
+只激活预处理,编译,和汇编,也就是他只把程序做成obj文件
+例子用法:
+gcc -c hello.c
+他将生成.o的obj文件
+
+-S
+
+只激活预处理和编译，就是指把文件编译成为汇编代码。
+例">
+<meta property="og:updated_time" content="2017-02-15T07:59:05.571Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="gcc参数">
+<meta name="twitter:description" content="写在前面的话
+ 从2009-03-06的百度空间翻出来，觉得现在还是可以使用，放到这里来。顺便吐槽下百度的产品：当初那么真心的使用百度hi，结果现在变成了这样。希望github.io给力。
+
+正文
+-c 
+
+只激活预处理,编译,和汇编,也就是他只把程序做成obj文件
+例子用法:
+gcc -c hello.c
+他将生成.o的obj文件
+
+-S
+
+只激活预处理和编译，就是指把文件编译成为汇编代码。
+例">
+    
+  <link rel="stylesheet" href="/css.css">
+  <link rel="stylesheet" href="/Roboto_Mono.css">
+  <link rel="stylesheet" href="/waves.min.css">
+  <link rel="stylesheet" href="/style.css">
+  
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+</head>
+
+<body>
+  <div id="loading-bar-wrapper">
+  <div id="loading-bar"></div>
+</div>
+
+
+  <script>setLoadingBarProgress(20)</script> 
+  <header class="l_header">
+		<div class="wrapper container">
+			<a class="logo flat-box" href='/' >
+				nathena
+			</a>
+			<div class='menu'>
+				<ul class='h-list'>
+					
+						<li>
+							<a class='flat-box nav-home' href='/'>
+								Home
+							</a>
+						</li>
+					
+						<li>
+							<a class='flat-box nav-archives' href='/archives'>
+								Archives
+							</a>
+						</li>
+					
+						<li>
+							<a class='flat-box nav-about' href='/about'>
+								About
+							</a>
+						</li>
+					
+				</ul>
+				<div class='underline'></div>
+			</div>
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="Search" />
+						<span class="icon icon-search"></span>
+					</form>
+				</div>
+			
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a href='javascript:void(0)'><span class="icon icon-search"></span></a></li>
+				
+				<li class='s-menu'><a href='javascript:void(0)'><span class="icon icon-menu"></span></a></li>
+			</ul>
+		</div>
+		<aside class="menu-phone">
+			<nav>
+				
+					<a href="/" class="nav-home nav">
+						Home
+					</a>
+				
+					<a href="/archives" class="nav-archives nav">
+						Archives
+					</a>
+				
+					<a href="/about" class="nav-about nav">
+						About
+					</a>
+				
+			</nav>
+		</aside>
+</header>
+
+    <script>setLoadingBarProgress(40);</script>
+  <div class="l_body">
+    <div class='container'>
+      <div class='l_main'>
+        <article id="post-2016-03-25-GCC_parameters"
+  class="post white-box article-type-post"
+  itemscope itemprop="blogPost">
+	<section class='meta'>
+	<h2 class="title">
+  	<a href="/2017/02/15/2016-03-25-GCC_parameters/">
+    	gcc参数
+    </a>
+  </h2>
+	<time>
+	  2月 15, 2017
+	</time>
+	
+    
+    <div class='cats'>
+        <a href="/categories/linux-c-cpp/">linux_c_cpp</a>
+    </div>
+
+	</section>
+	
+		<section class="tog"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#写在前面的话"><span class="toc-number">1.</span> <span class="toc-text">写在前面的话</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#正文"><span class="toc-number">2.</span> <span class="toc-text">正文</span></a></li></ol></section>
+	
+	<section class="article typo">
+  	<div class="article-entry" itemprop="articleBody">
+    	<h2 id="写在前面的话"><a href="#写在前面的话" class="headerlink" title="写在前面的话"></a>写在前面的话</h2><blockquote>
+<p> 从2009-03-06的百度空间翻出来，觉得现在还是可以使用，放到这里来。顺便吐槽下百度的产品：当初那么真心的使用百度hi，结果现在变成了这样。希望github.io给力。</p>
+</blockquote>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><ul>
+<li>-c </li>
+</ul>
+<p><code>只激活预处理,编译,和汇编,也就是他只把程序做成obj文件
+例子用法:
+gcc -c hello.c
+他将生成.o的obj文件</code></p>
+<ul>
+<li>-S</li>
+</ul>
+<p><code>只激活预处理和编译，就是指把文件编译成为汇编代码。
+例子用法
+gcc -S hello.c
+他将生成.s的汇编代码，你可以用文本编辑器察看</code></p>
+<ul>
+<li>-E</li>
+</ul>
+<p><code>只激活预处理,这个不生成文件,你需要把它重定向到一个输出文件里面.
+例子用法:
+gcc -E hello.c &gt;pianoapan.txt
+gcc -E hello.c | more
+慢慢看吧,一个hello word 也要与处理成800行的代码</code></p>
+<ul>
+<li>-o</li>
+</ul>
+<p><code>制定目标名称,缺省的时候,gcc 编译出来的文件是a.out
+例子用法
+gcc -o hello.exe hello.c
+gcc -o hello.asm -S hello.c</code></p>
+<ul>
+<li>-pipe</li>
+</ul>
+<p><code>使用管道代替编译中临时文件,在使用非gnu汇编工具的时候,可能有些问题
+gcc -pipe -o hello.exe hello.c</code></p>
+<ul>
+<li>-ansi</li>
+</ul>
+<p><code>关闭gnu c中与ansi c不兼容的特性,激活ansi c的专有特性(包括禁止一些asm inline typeof关键字,以及UNIX,vax等预处理宏,</code></p>
+<ul>
+<li>-fno-asm</li>
+</ul>
+<p><code>此选项实现ansi选项的功能的一部分，它禁止将asm,inline和typeof用作关键字。</code></p>
+<ul>
+<li>-fno-strict-prototype</li>
+</ul>
+<p><code>只对g++起作用,使用这个选项,g++将对不带参数的函数,都认为是没有显式的对参数的个数和类型说明,而不是没有参数.而gcc无论是否使用这个参数,都将对没有带参数的函数,认为城没有显式说明的类型</code></p>
+<ul>
+<li>-fthis-is-varialble</li>
+</ul>
+<p><code>就是向传统c++看齐,可以使用this当一般变量使用.</code></p>
+<ul>
+<li>-fcond-mismatch</li>
+</ul>
+<p><code>允许条件表达式的第二和第三参数类型不匹配,表达式的值将为void类型</code></p>
+<ul>
+<li>-funsigned-char</li>
+<li>-fno-signed-char</li>
+<li>-fsigned-char</li>
+<li>-fno-unsigned-char</li>
+</ul>
+<p><code>这四个参数是对char类型进行设置,决定将char类型设置成unsigned char(前两个参数)或者 signed char(后两个参数)</code></p>
+<ul>
+<li>-include file</li>
+</ul>
+<p><code>包含某个代码,简单来说,就是便以某个文件,需要另一个文件的时候,就可以用它设定,功能就相当于在代码中使用#include
+例子用法:
+gcc hello.c -include /root/pianopan.h</code></p>
+<ul>
+<li>-imacros file</li>
+</ul>
+<p><code>将file文件的宏,扩展到gcc/g++的输入文件,宏定义本身并不出现在输入文件中</code></p>
+<ul>
+<li>-Dmacro</li>
+</ul>
+<p><code>相当于C语言中的#define macro</code></p>
+<ul>
+<li>-Dmacro=defn</li>
+</ul>
+<p><code>相当于C语言中的#define macro=defn</code></p>
+<ul>
+<li>-Umacro</li>
+</ul>
+<p><code>相当于C语言中的#undef macro</code></p>
+<ul>
+<li>-undef</li>
+</ul>
+<blockquote>
+<p>取消对任何非标准宏的定义</p>
+</blockquote>
+<ul>
+<li>-Idir</li>
+</ul>
+<blockquote>
+<p>在你是用#include”file”的时候,gcc/g++会先在当前目录查找你所制定的头文件,如果没有找到,他回到缺省的头文件目录找</p>
+</blockquote>
+<ul>
+<li>-I-</li>
+</ul>
+<blockquote>
+<p>就是取消前一个参数的功能,所以一般在-Idir之后使用</p>
+</blockquote>
+<ul>
+<li>-idirafter dir</li>
+</ul>
+<blockquote>
+<p>在-I的目录里面查找失败,转到这个目录里面查找.</p>
+</blockquote>
+<ul>
+<li>-iprefix prefix</li>
+<li>-iwithprefix dir</li>
+</ul>
+<blockquote>
+<p>一般一起使用,当-I的目录查找失败,会到prefix+dir下查找</p>
+</blockquote>
+<ul>
+<li>-nostdinc</li>
+</ul>
+<blockquote>
+<p>使编译器不再系统缺省的头文件目录里面找头文件,一般和-I联合使用,明确限定头文件的位置</p>
+</blockquote>
+<ul>
+<li>-nostdin C++</li>
+</ul>
+<blockquote>
+<p>规定不在g++指定的标准路经中搜索,但仍在其他路径中搜索,.此选项在创libg++库使用</p>
+</blockquote>
+<ul>
+<li>-C</li>
+</ul>
+<p>在预处理的时候,不删除注释信息,一般和-E使用</p>
+<ul>
+<li>-M</li>
+</ul>
+<p>生成文件关联的信息。包含目标文件所依赖的所有源代码。</p>
+<ul>
+<li>-MM</li>
+</ul>
+<p>和上面的那个一样，但是它将忽略由#include造成的依赖关系。</p>
+<ul>
+<li>-MD</li>
+</ul>
+<p>和-M相同，但是输出将导入到.d的文件里面</p>
+<ul>
+<li>-MMD</li>
+</ul>
+<p>和-MM相同，但是输出将导入到.d的文件里面</p>
+<ul>
+<li>-Wa,option</li>
+</ul>
+<p>此选项传递option给汇编程序;如果option中间有逗号,就将option分成多个选项,然后传递给会汇编程序</p>
+<ul>
+<li>-Wl.option</li>
+</ul>
+<p>此选项传递option给连接程序;如果option中间有逗号,就将option分成多个选项,然后传递给会连接程序.</p>
+<ul>
+<li>-llibrary</li>
+</ul>
+<p>制定编译的时候使用的库<br>例子用法<br>gcc -lcurses hello.c</p>
+<ul>
+<li>-Ldir</li>
+</ul>
+<blockquote>
+<p>制定编译的时候，搜索库的路径。比如你自己的库，可以用它制定目录，不然编译器将只在标准库的目录找。这个dir就是目录的名称。</p>
+</blockquote>
+<ul>
+<li>-O0</li>
+<li>-O1</li>
+<li>-O2</li>
+<li>-O3</li>
+</ul>
+<blockquote>
+<p>编译器的优化选项的4个级别，-O0表示没有优化,-O1为缺省值，-O3优化级别最高</p>
+</blockquote>
+<ul>
+<li>-g</li>
+</ul>
+<blockquote>
+<p>只是编译器，在编译的时候，产生调试信息。</p>
+</blockquote>
+<ul>
+<li>-gstabs</li>
+</ul>
+<blockquote>
+<p>此选项以stabs格式声称调试信息,但是不包括gdb调试信息.</p>
+</blockquote>
+<ul>
+<li>-gstabs+</li>
+</ul>
+<blockquote>
+<p>此选项以stabs格式声称调试信息,并且包含仅供gdb使用的额外调试信息.</p>
+</blockquote>
+<ul>
+<li>-ggdb</li>
+</ul>
+<blockquote>
+<p>此选项将尽可能的生成gdb的可以使用的调试信息.</p>
+</blockquote>
+<ul>
+<li>-static</li>
+</ul>
+<blockquote>
+<p>此选项将禁止使用动态库，所以，编译出来的东西，一般都很大，也不需要什么动态连接库，就可以运行.</p>
+</blockquote>
+<ul>
+<li>-share</li>
+</ul>
+<blockquote>
+<p>此选项将尽量使用动态库，所以生成文件比较小，但是需要系统由动态库.</p>
+</blockquote>
+<ul>
+<li>-traditional</li>
+</ul>
+<blockquote>
+<p>试图让编译器支持传统的C语言特性</p>
+</blockquote>
+
+  	</div>
+	  
+	  <div class="article-tags tags">
+      
+        <a href="/tags/linux/">linux</a>
+      
+        <a href="/tags/c/">c</a>
+      
+        <a href="/tags/c/">c++</a>
+      
+        <a href="/tags/gcc/">gcc</a>
+      
+	  </div>
+    
+	</section>
+	
+		<section id="comments">
+		    <!-- 多说评论框 start -->
+		    <div class="ds-thread" data-thread-key="post-2016-03-25-GCC_parameters" data-title="gcc参数" data-url="/2017/02/15/2016-03-25-GCC_parameters/"></div>
+		    <!-- 多说评论框 end -->
+		    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+		    <script type="text/javascript">
+		    var duoshuoQuery = {short_name:'nathena'};
+		      (function() {
+		        var ds = document.createElement('script');
+		        ds.type = 'text/javascript';ds.async = true;
+		        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		        ds.charset = 'UTF-8';
+		        (document.getElementsByTagName('head')[0] 
+		         || document.getElementsByTagName('body')[0]).appendChild(ds);
+		      })();
+		      </script>
+		    <!-- 多说公共JS代码 end -->
+		 </section>
+	
+</article>
+
+      </div>
+      <aside class='l_side'>
+        
+  <section class='m_widget about'>
+
+<img class='avatar waves-image' src='/res/avatar.png' />
+
+<div class='header'>nathena</div>
+<div class='content'>
+<div></div>
+</div>
+</section>
+
+  <section class='m_widget friendly-links'>
+<div class='header'>Links</div>
+<div class='content'>
+    <ul class="entry">
+    
+        <li><a class="flat-box" target="_blank" href="https://github.com/nathena/">
+            <div class='name'>github</div>
+        </a></li>
+    
+    </ul>
+</div>
+</section>
+
+  <section class='m_widget categories'>
+<div class='header'>Categories</div>
+<div class='content'>
+    
+    <ul class="entry">
+    
+        <li><a class="flat-box" href="/categories/Web/"><div class='name'>Web</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/javaScript/"><div class='name'>javaScript</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/linux-c-cpp/"><div class='name'>linux_c_cpp</div><div class='badget'>3</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/杂谈/"><div class='name'>杂谈</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/软件工程/"><div class='name'>软件工程</div><div class='badget'>2</div></a></li>
+    
+    </ul>
+    
+</div>
+</section>
+
+  
+<div class="m_widget tagcloud">
+    <div class="header">Tags</div>
+    <div class='content'>
+        <a href="/tags/c/" style="font-size: 20px; color: #000">c</a> <a href="/tags/c/" style="font-size: 20px; color: #000">c++</a> <a href="/tags/css/" style="font-size: 14px; color: #808080">css</a> <a href="/tags/gcc/" style="font-size: 14px; color: #808080">gcc</a> <a href="/tags/git/" style="font-size: 14px; color: #808080">git</a> <a href="/tags/html/" style="font-size: 14px; color: #808080">html</a> <a href="/tags/ios/" style="font-size: 14px; color: #808080">ios</a> <a href="/tags/js/" style="font-size: 14px; color: #808080">js</a> <a href="/tags/linux/" style="font-size: 20px; color: #000">linux</a> <a href="/tags/编程思想/" style="font-size: 14px; color: #808080">编程思想</a>
+    </div>
+</div>
+
+
+
+      </aside>
+      <script>setLoadingBarProgress(60);</script>
+    </div>
+  </div>
+  <footer id="footer" class="clearfix">
+
+  <div class="social-wrapper">
+  	
+  </div>
+  
+  <div>Theme <a href='https://github.com/stkevintan/hexo-theme-material-flow' class="codename">MaterialFlow</a> designed by <a href="http://keyin.me/" target="_blank">Kevin Tan</a>.</div>
+  
+</footer>
+
+
+  <script>setLoadingBarProgress(80);</script>
+  
+
+  
+  
+  
+    <!-- 百度统计 -->
+	<script>
+	  var _hmt = _hmt || [];
+	  (function() {
+	    var hm = document.createElement("script");
+	    hm.src = "//hm.baidu.com/hm.js?b2be7c905d13cdaac406e0d6317df3e1";
+	    var s = document.getElementsByTagName("script")[0];
+	    s.parentNode.insertBefore(hm, s);
+	  })();
+	</script>
+  
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/waves.min.js"></script>
+<script src="/js/scrollreveal.min.js"></script>
+<script src="/js/jquery.fitvids.js"></script>
+<script>
+	var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+	var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+	var ALGOLIA_API_KEY = "";
+	var ALGOLIA_APP_ID = "";
+	var ALGOLIA_INDEX_NAME = "";
+  var AZURE_SERVICE_NAME = "";
+  var AZURE_INDEX_NAME = "";
+  var AZURE_QUERY_KEY = "";
+  var BAIDU_API_ID = "";
+  var SEARCH_SERVICE = "hexo";
+  var ROOT = "/"||"/";
+  if(!ROOT.endsWith('/'))ROOT += '/';
+</script>
+<script src="/js/search.js"></script>
+<script src="/js/app.js"></script>
+
+
+  <script>setLoadingBarProgress(100);</script>
+</body>
+</html>
